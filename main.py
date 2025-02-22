@@ -28,10 +28,10 @@ app.mount("/frames", StaticFiles(directory="frames"), name="frames")
 
 async def analyze_image(image_path: str, object_str: str):
     """异步版本的图像分析函数"""
-    prompt_str = f"""Please analyze the image and answer the following questions:
-    1. Is there a {object_str} in the image?
-    2. If yes, describe its appearance and location in the image in detail.
-    3. If no, describe what you see in the image instead.
+    prompt_str = f"""Please analyze the image like a sports {object_str} scout and answer the following questions:
+    1. Which {object_str} action is taking place in the image?
+    2. If yes, describe which team is doing the action.
+    3. If no, describe the position of the players in the court.
     4. On a scale of 1-10, how confident are you in your answer?
 
     Please structure your response as follows:
