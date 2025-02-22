@@ -36,22 +36,28 @@ git clone https://github.com/win4r/VideoFinder-Llama3.2-vision-Ollama.git
 cd VideoFinder
 ```
 
-2. Install dependencies
+2. Create a virtual environment in python and activate it to easy install the required dependencies
+```bash
+virtualenv .
+source bin/activate
+```
+
+3. Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Make sure Ollama is running with Llama Vision model
+4. Make sure Ollama is running with Llama Vision model
 ```bash
 ollama run llama3.2-vision
 ```
 
-4. Start the application
+5. Start the application
 ```bash
 python main.py
 ```
 
-5. Access the web interface at `http://localhost:8000`
+6. Access the web interface at `http://localhost:8000`
 
 ## 🛠️ Usage
 1. Open the web interface
